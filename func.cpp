@@ -15,7 +15,6 @@ void convert(string s)
     string res;
 	// Iterate till length of the string 
 	for (int i = 0; i < s.length(); i++) {
-	   // cout << int(s[i]) << endl;
 	   int val = int(s[i]);
 	   if((val >= 97 && val <= 122) || (val >= 65 && val <= 90) ) {
 	        break;
@@ -28,8 +27,6 @@ for (int i = 0; i < res.length(); i++) {
 		// Subtract 48 from the current digit 
 		num = num * 10 + (int(res[i]) - 48); 
 }
-
-	// Print the answer 
 	cout << num; 
 } 
 
